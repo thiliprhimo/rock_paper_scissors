@@ -1,0 +1,130 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body {
+    display : flex;
+    height : 100vh;
+}
+
+.leftpanel {
+    background : #1b1408;
+    width : 30%;
+    height : 100%;
+}
+
+.middlepanel {
+    background : #1b1408;
+    width : 40%;
+    height : 100%;
+}
+
+.rightpanel {
+    background : #1b1408;
+    width : 30%;
+    height : 100%;
+}
+
+.leftpanel .container {
+    background : white;
+    padding : 100px;
+    width : 85%;
+    border-radius : 8px;
+    transition : 0.2s;
+    margin-top : 100px;
+    margin-left : 30px;
+}
+
+.middlepanel .container {
+    background : white;
+    padding : 100px;
+    width : 85%;
+    border-radius : 8px;
+    transition : 0.2s;
+    margin-top : 100px;
+    margin-left : 40px;
+}
+
+.rightpanel .container {
+    background : white;
+    padding : 100px;
+    width : 85%;
+    border-radius : 8px;
+    transition : 0.2s;
+    margin-top : 100px;
+    margin-left : 30px;
+}
+
+.middlepanel .container h3 {
+    text-align : center;
+}
+
+.rightpanel .container h3 {
+    text-align : center;
+}
+
+.middlepanel .container div p {
+    text-align : center;
+    margin-top : 20px;
+    border-radius : 20px;
+    padding : 12px 0;
+    transition : 0.2s;
+}
+
+.middlepanel .imageContent {
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    grid-gap : 20px;
+}
+
+.middlepanel .imageContent img {
+    padding : 8px;
+    width : 100%;
+    height : auto;
+    border-radius : 8px;
+    box-shadow : 0 0 6px rgba(0, 0, 0, 0, 2);
+    transition : 0.15s;
+}
+
+#score {
+    margin-top : 20px;
+    display : flex;
+    justify-content : space-between;   
+}
+
+#score .sides {
+    display : inline-block;
+    padding : 12px 20px;
+    background : #EEE;
+    border-radius : 20px;
+}
+
+.rightpanel .buttons {    
+    text-align : center;
+}
+
+.win {
+    background : rgb(0, 255, 76);
+}
+
+.lose {
+    background : rgb(255, 69, 0);
+}
+
+.tie {
+    background : rgb(199, 199, 199);
+}
+
+#reset {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+}

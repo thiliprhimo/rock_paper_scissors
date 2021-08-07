@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper & Scissors</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="split leftpanel">
+        <div class="container">
+            <h3>Play details</h3>
+            <label for="target_score">Target Score : </label>
+            <input type="number" id="targetScore" class="details" min="5" placeholder="Enter target score" value="5" autofocus>
+
+            <label for="target_score">Player Name : </label>
+            <input type="text" id="playerName" class="details" placeholder="Enter player name">
+        </div>
+    </div>
+    <div class="split middlepanel">
+        <div class="container">
+            <h3>Rock, Paper & Scissors</h3>
+            <div class="imageContent">
+                <img src="game_symbols/rock.png" alt="rock" class="game">
+                <img src="game_symbols/paper.png" alt="paper" class="game">
+                <img src="game_symbols/scissors.png" alt="scissors" class="game">
+            </div>
+
+            <div class="result">                
+                <div id="score" class="selectedChoices">
+                    <span class="sides">
+                        <span class="nickName">User</span> : <span id="userOption"></span> 
+                    </span>
+                    <span class="sides">
+                        CPU : <span id="computerOption"></span> 
+                    </span> 
+                </div>
+                
+                <p id="winner">Choose your move!</p>                
+            </div>
+        </div>
+    </div>
+    <div class="split rightpanel">
+        <div class="container">
+            <h3>Score Board</h3>
+            <div id="score">
+                <span class="sides"> 
+                <span class="nickName">User</span> : <span id="userPoint">0</span> 
+                </span>                    
+                <span class="sides"> 
+                    CPU : <span id="computerPoint">0</span> 
+                </span>
+            </div>
+
+            <div class="buttons">
+                <button id="reset">Reset Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
