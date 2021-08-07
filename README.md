@@ -14,3 +14,5 @@ After reaching the target score, final winner will be displayed & game will be s
 You can reset your game using "Reset Button".
 
 Have fun... Say something about code..
+
+To check the game - visit : https://www.rhimo.in/rock_paper_scissors/
